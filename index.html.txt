@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Blog Personal</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Mi Blog Personal</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+      <a href="entrada1.html">Entrada 1</a>
+      <a href="entrada2.html">Entrada 2</a>
+      <a href="entrada3.html">Entrada 3</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Bienvenido a mi blog</h2>
+    <p>Este es un espacio donde comparto mis primeros pasos con HTML y CSS. Cada entrada incluye texto e imágenes de ejemplo.</p>
+    <img src="https://via.placeholder.com/800x300" alt="Imagen de bienvenida">
+  </main>
+
+  <footer>
+    <p>© 2025 - Blog creado por Aristides Meneses Matos</p>
+  </footer>
+</body>
+</html>
