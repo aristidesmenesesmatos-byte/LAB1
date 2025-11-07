@@ -1,3 +1,4 @@
+/* Estilo general del sitio */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -5,6 +6,7 @@ body {
   color: #333;
 }
 
+/* Encabezado */
 header {
   background-color: #0078d7;
   color: white;
@@ -12,34 +14,53 @@ header {
   text-align: center;
 }
 
+/* Navegación principal */
 nav a {
   color: white;
   margin: 0 1rem;
   text-decoration: none;
   font-weight: bold;
+  transition: all 0.3s ease; /* transición suave al pasar el ratón o al activar */
 }
 
+/* Efecto al pasar el ratón */
 nav a:hover {
   text-decoration: underline;
+  color: #e0e0e0;
 }
 
+/* Enlace activo: resalta la página actual */
+nav a.active {
+  text-decoration: underline;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 0.25rem 0.5rem;
+  color: #ffffff;
+}
+
+/* Contenido principal */
 main {
   max-width: 800px;
   margin: 2rem auto;
   padding: 1rem;
   background: white;
   border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* sombra ligera para destacar el contenido */
 }
 
+/* Imágenes */
 img {
   width: 100%;
   border-radius: 5px;
   margin-top: 1rem;
 }
 
+/* Pie de página */
 footer {
   text-align: center;
   padding: 1rem;
   background-color: #eee;
   margin-top: 2rem;
+  font-size: 0.9rem;
+  color: #555;
 }
