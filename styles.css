@@ -14,15 +14,15 @@ header {
   text-align: center;
 }
 
-/* Navegación principal con estilo de botones */
+/* Navegación principal con botones degradados */
 nav {
   margin-top: 0.5rem;
 }
 
 nav a {
   color: white;
-  background-color: rgba(255, 255, 255, 0.15);
-  margin: 0 0.4rem;
+  background: linear-gradient(90deg, #0066cc, #0099ff);
+  margin: 0 0.5rem;
   padding: 0.5rem 1rem;
   border-radius: 6px;
   text-decoration: none;
@@ -31,16 +31,17 @@ nav a {
   transition: all 0.3s ease;
 }
 
-/* Efecto al pasar el ratón */
+/* Efecto hover */
 nav a:hover {
-  background-color: rgba(255, 255, 255, 0.35);
-  transform: translateY(-2px);
+  background: linear-gradient(90deg, #0052a3, #00b3ff);
+  transform: scale(1.05);
 }
 
 /* Enlace activo (página actual) */
 nav a.active {
-  background-color: white;
+  background: white;
   color: #0078d7;
+  font-weight: bold;
   transform: scale(1.05);
 }
 
