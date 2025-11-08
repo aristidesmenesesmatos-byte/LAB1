@@ -1,4 +1,4 @@
-/* Estilo general del sitio */
+/* ===== Estilo general ===== */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,7 +6,7 @@ body {
   color: #333;
 }
 
-/* Encabezado */
+/* ===== Encabezado ===== */
 header {
   background-color: #0078d7;
   color: white;
@@ -14,7 +14,7 @@ header {
   text-align: center;
 }
 
-/* Navegación principal con botones degradados */
+/* ===== Navegación (botones degradados) ===== */
 nav {
   margin-top: 0.5rem;
 }
@@ -31,13 +31,11 @@ nav a {
   transition: all 0.3s ease;
 }
 
-/* Efecto hover */
 nav a:hover {
   background: linear-gradient(90deg, #0052a3, #00b3ff);
   transform: scale(1.05);
 }
 
-/* Enlace activo (página actual) */
 nav a.active {
   background: white;
   color: #0078d7;
@@ -45,9 +43,9 @@ nav a.active {
   transform: scale(1.05);
 }
 
-/* Contenido principal */
+/* ===== Contenido principal ===== */
 main {
-  max-width: 800px;
+  max-width: 900px;
   margin: 2rem auto;
   padding: 1rem;
   background: white;
@@ -55,20 +53,41 @@ main {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-/* Imágenes */
-img {
-  width: 100%;
-  border-radius: 5px;
-  margin-top: 1rem;
+/* Títulos de las entradas centrados */
+main h2 {
+  text-align: center;
+  margin-top: 0.25rem;
 }
 
-/* Pie de página */
+/* ===== Imágenes con efecto hover ===== */
+img {
+  width: 100%;
+  border-radius: 6px;
+  margin-top: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.25);
+}
+
+/* ===== Pie de página ===== */
 footer {
   text-align: center;
-  padding: 1rem;
+  padding: 1.5rem;
   background-color: #eee;
   margin-top: 2rem;
   font-size: 0.9rem;
   color: #555;
 }
 
+/* ===== Accesibilidad: reducir animaciones si el usuario lo pide ===== */
+@media (prefers-reduced-motion: reduce) {
+  nav a, img {
+    transition: none;
+  }
+  nav a:hover, nav a.active, img:hover {
+    transform: none;
+  }
+}
